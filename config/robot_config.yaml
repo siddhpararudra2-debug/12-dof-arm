@@ -1,0 +1,28 @@
+# AETHER-12 reference configuration. Dimensions are configurable simulation values,
+# not a manufacturing specification or a validated physical robot design.
+robot:
+  name: aether12
+  dof: 12
+  base_radius_m: 0.12
+  collision_radius_m: 0.045
+  end_effector:
+    xyz_m: [0.0, 0.0, 0.0]
+    rpy_rad: [0.0, 0.0, 0.0]
+  joints:
+    - {name: joint_1, type: revolute, a_m: 0.16, alpha_rad: 1.57079632679, d_m: 0.18, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 1, controller_id: 1}
+    - {name: joint_2, type: revolute, a_m: 0.20, alpha_rad: 0.0, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 2, controller_id: 1}
+    - {name: joint_3, type: revolute, a_m: 0.18, alpha_rad: 1.57079632679, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 3, controller_id: 1}
+    - {name: joint_4, type: revolute, a_m: 0.16, alpha_rad: -1.57079632679, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 4, controller_id: 1}
+    - {name: joint_5, type: revolute, a_m: 0.14, alpha_rad: 1.57079632679, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 5, controller_id: 1}
+    - {name: joint_6, type: revolute, a_m: 0.12, alpha_rad: 0.0, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 6, controller_id: 1}
+    - {name: joint_7, type: revolute, a_m: 0.10, alpha_rad: 1.57079632679, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 7, controller_id: 1}
+    - {name: joint_8, type: revolute, a_m: 0.09, alpha_rad: -1.57079632679, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 8, controller_id: 1}
+    - {name: joint_9, type: revolute, a_m: 0.08, alpha_rad: 1.57079632679, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 9, controller_id: 1}
+    - {name: joint_10, type: revolute, a_m: 0.07, alpha_rad: 0.0, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 10, controller_id: 1}
+    - {name: joint_11, type: revolute, a_m: 0.06, alpha_rad: 1.57079632679, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 11, controller_id: 1}
+    - {name: joint_12, type: revolute, a_m: 0.05, alpha_rad: 0.0, d_m: 0.0, min_position_rad: -3.14159265359, max_position_rad: 3.14159265359, max_velocity_rad_s: 2.0, max_acceleration_rad_s2: 6.0, max_torque_nm: 30.0, direction: 1, zero_offset_rad: 0.0, motor_id: 12, controller_id: 1}
+  safety:
+    command_timeout_s: 0.25
+    collision_distance_m: 0.02
+    require_explicit_enable: true
+    require_manual_estop_reset: true

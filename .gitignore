@@ -1,0 +1,14 @@
+build/
+.cache/
+compile_commands.json
+*.o
+*.a
+*.so
+.vscode/
+.idea/
+.DS_Store
+
+# Local runtime data
+logs/
+recordings/
+calibration_report.json
